@@ -1,0 +1,40 @@
+{
+  "url": "http://127.0.0.1:55324",
+  "checks": [
+    "HTTP 200 /",
+    "HTTP 200 /kit",
+    "HTTP 200 /export-manifest.json",
+    "HTTP 200 /version.json",
+    "Production assets served without Vite development client",
+    "Created, renamed, moved and scaled Cube through official UI, then saved scene",
+    "Fresh-context load and re-export preserve complete object JSON",
+    "Official Build & download exported game ZIP; upstream checker passed; scene preserved",
+    "Exported game boots into Play on a second loopback origin, with editor hidden and no external requests"
+  ],
+  "pageErrors": [],
+  "manifest": {
+    "version": "1.33.0",
+    "files": 571,
+    "bytes": 19327738
+  },
+  "browser": "155.0.4283.45",
+  "exportResult": "pinokio-production-smoke-itch.zip · 7.4 MB · 575 files · checked OK\nengine 18.4 MB · scene 4 KB\nplay.js key \"gameId\" is not part of the config — the runtime ignores it",
+  "exportCheck": "check-export: evidence\\windows-production\\game-itch.zip\n  files    575 / 1000 (itch.io)   runtime files 521\n  size     18.64 MB extracted / 500 MB\n  largest  _app/immutable/nodes/2.CVReUIGY.js 3.14 MB / 200 MB\n  config   id=x3r5j4x2f096 preset=itch scene=scene.tpscene packs=(none/CDN) modules=0\n  warning  play.js key \"gameId\" is not part of the config — the runtime ignores it\n  OK\n",
+  "export": {
+    "filename": "pinokio-production-smoke-itch.zip",
+    "bytes": 7801998,
+    "files": 575
+  },
+  "gameExternalRequests": [],
+  "game": {
+    "phase": "playing",
+    "error": "",
+    "objects": [
+      "Pinokio Production Cube"
+    ],
+    "locked": true,
+    "chromeHidden": true,
+    "badge": true
+  },
+  "passed": true
+}

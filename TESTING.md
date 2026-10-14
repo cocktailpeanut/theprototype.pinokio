@@ -1,5 +1,28 @@
 # Validation record
 
+## Production launcher - Windows passed, 2026-10-14
+
+Implementation: local-only commit `5fd5d6a444b301634e795cc5ea46ab5738271f63`, based on `80e601c8819d6a5329a339580a5b90e3d20cdd39`. No production change was pushed. The owner confirmed publishing the GitHub repository publicly; its visibility was left public.
+
+Actual installed Pinokio 8.2.2 executed `pterm run C:\pinokio\api\theprototype.pinokio` for Install, `pterm start C:\pinokio\api\theprototype.pinokio\update.js` for Update, then `pterm run C:\pinokio\api\theprototype.pinokio` for Start. All passed. Install reused the existing upstream checkout to preserve data; Reset was not run. Update built the same upstream commit `21c1ece16e70f036abce32adacc097d19efda781` (1.33.0); its working tree remains clean.
+
+Start executed root **npm start**, serving `app/build/` with pinned `serve@14.2.6`. The OS allocated port 55324. Pinokio reported online/ready at `http://127.0.0.1:55324`; Windows `Get-NetTCPConnection` verified the listener bound only to **127.0.0.1**, process 9944. The server's printed Network URL is not proof of binding; the actual socket was checked.
+
+Pinned `compression@1.8.2` overrides serve's affected 1.8.1 dependency, fixing GHSA-vc2v-76pw-4v95. Root npm audit reports **zero vulnerabilities** after this patch. Upstream dependencies were unchanged and retain the previously recorded 14 audit findings.
+
+Focused UI test: existing Edge 155.0.4283.45, headless Playwright, 1440x900, `C:\pinokio\bin\miniforge\node.exe production-smoke.cjs`. Only upstream's opt-in debug diagnostics were seeded; creation, editing, saving, loading and exporting used official visible UI controls.
+
+- `/`, `/kit`, `/export-manifest.json` and `/version.json` returned HTTP 200. `/@vite/client` returned 404. The build manifest contains 571 files and 19,327,738 bytes.
+- Added Cube, renamed it **Pinokio Production Cube**, set X=2 and Y scale=1.5, then saved a `.tpscene`.
+- Loaded the file in a fresh browser context and re-exported it. The complete object JSON was identical.
+- Used official **Export > itch.io > Build & download zip**. The generated `pinokio-production-smoke-itch.zip` has 575 files, 7,801,998 compressed bytes and 18.64 MB extracted. Upstream `scripts/check-export.cjs --preset itch` passed.
+- Extracted the game ZIP locally and served it on a second loopback origin using the same pinned static server. It booted into **Play**, loaded the Cube, hid editor chrome, displayed the attribution badge, and made no external requests. This verifies a simple exported scene, not a complex authored game.
+- No browser page errors occurred. The upstream export checker warned that `play.js` contains ignored key `gameId`; this was preserved and did not block validation.
+
+Evidence: [loaded scene](evidence/windows-production/02-reloaded.png), [export result](evidence/windows-production/04-export-complete.png), [exported Play mode](evidence/windows-production/05-exported-game.png), [structured results](evidence/windows-production/result.json), and [server audit](evidence/windows-production/server-audit.json). The exported game ZIP remains local at `C:\Users\Shadow\Documents\codex\2026-10-14\task\evidence\windows-production\game-itch.zip`.
+
+Production Mac/Linux validation remains pending. AI/model calls, collaboration, VR and voice were not tested. No model, credential, certificate or OS trust changes were made.
+
 ## Windows - passed, 2026-10-14
 
 Launcher implementation tested: `0a114b0b3cbd3dbf0298fb33197b5850ee5d20c5`.
