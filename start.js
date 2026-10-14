@@ -3,8 +3,8 @@ module.exports = {
   run: [{
     method: "shell.run",
     params: {
-      path: "app",
-      message: "npm run dev -- --host 127.0.0.1",
+      path: ".",
+      message: "npm start",
       on: [{
         event: "/(http:\\/\\/[0-9.:]+)/",
         done: true

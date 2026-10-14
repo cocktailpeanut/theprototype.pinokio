@@ -4,7 +4,7 @@ module.exports = {
   description: "Collaborative 3D prototyping in your browser. Official Svelte / Three.js editor with optional AI.",
   icon: "icon.png",
   menu: async (kernel, info) => {
-    const installed = info.exists("app/node_modules/.package-lock.json")
+    const installed = info.exists("app/build/index.html") && info.exists("app/build/export-manifest.json") && info.exists("node_modules/serve/build/main.js")
     const running = {
       install: info.running("install.js"),
       start: info.running("start.js"),
