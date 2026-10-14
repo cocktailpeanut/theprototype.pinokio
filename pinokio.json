@@ -1,0 +1,5 @@
+{
+  "title": "theprototype.app",
+  "description": "Official browser 3D editor: Three.js, Svelte, collaboration and optional AI.",
+  "icon": "icon.png"
+}

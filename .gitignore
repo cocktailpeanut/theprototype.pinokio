@@ -1,0 +1,7 @@
+/app/
+/logs/
+/cache/
+/ENVIRONMENT
+/node_modules/
+.DS_Store
+Thumbs.db
