@@ -2,7 +2,7 @@
 
 ## Production launcher - Windows passed, 2026-10-14
 
-Implementation: local-only commit `5fd5d6a444b301634e795cc5ea46ab5738271f63`, based on `80e601c8819d6a5329a339580a5b90e3d20cdd39`. No production change was pushed. The owner confirmed publishing the GitHub repository publicly; its visibility was left public.
+Implementation tested: `5fd5d6a444b301634e795cc5ea46ab5738271f63`, based on `80e601c8819d6a5329a339580a5b90e3d20cdd39`. Windows validation completed before publication; the user subsequently requested pushing the production fix and evidence. The owner confirmed publishing the GitHub repository publicly; its visibility was left public.
 
 Actual installed Pinokio 8.2.2 executed `pterm run C:\pinokio\api\theprototype.pinokio` for Install, `pterm start C:\pinokio\api\theprototype.pinokio\update.js` for Update, then `pterm run C:\pinokio\api\theprototype.pinokio` for Start. All passed. Install reused the existing upstream checkout to preserve data; Reset was not run. Update built the same upstream commit `21c1ece16e70f036abce32adacc097d19efda781` (1.33.0); its working tree remains clean.
 
