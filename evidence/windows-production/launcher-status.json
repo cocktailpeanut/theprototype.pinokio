@@ -1,0 +1,14 @@
+{
+  "implementation_commit": "5fd5d6a444b301634e795cc5ea46ab5738271f63",
+  "upstream_commit": "21c1ece16e70f036abce32adacc097d19efda781",
+  "ready_url": "http://127.0.0.1:55324",
+  "ready": true,
+  "state": "online",
+  "captured_url": "http://127.0.0.1:55324",
+  "listener": {
+    "LocalAddress": "127.0.0.1",
+    "LocalPort": 55324,
+    "OwningProcess": 9944
+  },
+  "validated_at_utc": "2026-10-14T19:12:46.2843046Z"
+}
