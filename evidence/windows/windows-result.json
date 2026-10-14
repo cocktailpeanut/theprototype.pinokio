@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "url": "http://127.0.0.1:5173/",
+  "browser": "155.0.4283.45",
+  "name": "Pinokio Windows Cube",
+  "objectCount": 1,
+  "matrix": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    1.5,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    2,
+    0,
+    -1.7647058823529527,
+    1
+  ],
+  "pageErrors": [],
+  "createdFileBytes": 4345,
+  "reloadedFileBytes": 4345
+}

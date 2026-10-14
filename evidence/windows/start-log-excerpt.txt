@@ -1,0 +1,54 @@
+C:\pinokio\api\theprototype.pinokio\app>conda_hook & conda deactivate & conda deactivate & conda deactivate & conda activate base && npm run dev -- --host 127.0.0.1
+> theprototype.app@1.33.0 dev
+> vite dev --host 127.0.0.1
+(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  VITE v8.3.1  ready in 37053 ms
+  ➜  Local:   http://127.0.0.1:5173/
+[module] escape failed to register ReferenceError: window is not defined
+[module] minigolf failed to register ReferenceError: window is not defined
+[module] targettoss failed to register ReferenceError: window is not defined
+[module] escape failed to register ReferenceError: window is not defined
+[module] minigolf failed to register ReferenceError: window is not defined
+[module] targettoss failed to register ReferenceError: window is not defined
+[module] escape failed to register ReferenceError: window is not defined
+[module] minigolf failed to register ReferenceError: window is not defined
+[module] targettoss failed to register ReferenceError: window is not defined
+[module] escape failed to register ReferenceError: window is not defined
+[module] minigolf failed to register ReferenceError: window is not defined
+[module] targettoss failed to register ReferenceError: window is not defined
+[module] escape failed to register ReferenceError: window is not defined
+[module] minigolf failed to register ReferenceError: window is not defined
+[module] targettoss failed to register ReferenceError: window is not defined
+[module] escape failed to register ReferenceError: window is not defined
+[module] minigolf failed to register ReferenceError: window is not defined
+[module] targettoss failed to register ReferenceError: window is not defined
+[module] escape failed to register ReferenceError: window is not defined
+[module] minigolf failed to register ReferenceError: window is not defined
+[module] targettoss failed to register ReferenceError: window is not defined
+[module] escape failed to register ReferenceError: window is not defined
+[module] minigolf failed to register ReferenceError: window is not defined
+[module] targettoss failed to register ReferenceError: window is not defined
+[module] escape failed to register ReferenceError: window is not defined
+[module] minigolf failed to register ReferenceError: window is not defined
+[module] targettoss failed to register ReferenceError: window is not defined
+[module] escape failed to register ReferenceError: window is not defined
+[module] minigolf failed to register ReferenceError: window is not defined
+[module] targettoss failed to register ReferenceError: window is not defined
+[module] escape failed to register ReferenceError: window is not defined
+[module] minigolf failed to register ReferenceError: window is not defined
+[module] targettoss failed to register ReferenceError: window is not defined
+[module] escape failed to register ReferenceError: window is not defined
+[module] minigolf failed to register ReferenceError: window is not defined
+[module] targettoss failed to register ReferenceError: window is not defined
+[module] escape failed to register ReferenceError: window is not defined
+[module] minigolf failed to register ReferenceError: window is not defined
+[module] targettoss failed to register ReferenceError: window is not defined
+[module] escape failed to register ReferenceError: window is not defined
+[module] minigolf failed to register ReferenceError: window is not defined
+[module] targettoss failed to register ReferenceError: window is not defined
+[module] escape failed to register ReferenceError: window is not defined
+[module] minigolf failed to register ReferenceError: window is not defined
+[module] targettoss failed to register ReferenceError: window is not defined
+[module] escape failed to register ReferenceError: window is not defined
+[module] minigolf failed to register ReferenceError: window is not defined
+[module] targettoss failed to register ReferenceError: window is not defined

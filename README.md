@@ -23,7 +23,7 @@ Upstream documents HTTPS for WebXR and voice chat. Treat VR/voice as optional an
 
 ## Optional AI
 
-Configure your own authorized endpoint and key in **Settings > AI**. Upstream supports a scene assistant and text-to-3D providers such as ComfyUI/TRELLIS or Meshy. No AI model, model server, paid API, or credentials are installed or configured by this launcher. AI generation is not claimed tested without a working authorized endpoint. Keep keys out of Git and screenshots. Collaboration uses upstream's default public signalling service unless configured otherwise.
+Configure your own authorized endpoint and key in **Settings > AI**. Upstream supports a scene assistant and text-to-3D providers such as ComfyUI/TRELLIS or Meshy. No AI model, model server, paid API, or credentials are installed or configured by this launcher. AI generation is not claimed tested without a working authorized endpoint. Keep keys out of Git and screenshots. On localhost, upstream selects a local signalling server at `wss://localhost:9001`; no signalling server is installed by this launcher. Local editing and scene files work without it. For collaboration, configure your own existing authorised signalling server under Settings > Connection.
 
 ## CLI and integration
 

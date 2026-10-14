@@ -39,8 +39,7 @@ module.exports = {
       }, {
         icon: "fa-solid fa-plug", text: "Reinstall", href: "install.js"
       }, {
-        icon: "fa-solid fa-broom", text: "Reset", href: "reset.js",
-        confirm: "Remove the upstream app and dependencies? Export scenes first."
+        icon: "fa-solid fa-broom", text: "Reset", href: "reset.js"
       }, {
         icon: "fa-solid fa-book", text: "README", href: "README.md?raw=true"
       }]

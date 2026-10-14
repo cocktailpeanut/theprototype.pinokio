@@ -1,0 +1,28 @@
+[api shell.run]
+Microsoft Windows [Version 10.0.26200.9457]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\pinokio\api\theprototype.pinokio\app>conda_hook & conda deactivate & conda deactivate & conda deactivate & conda activate base && npm install
+npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead        
+
+added 339 packages, and audited 340 packages in 1m
+
+55 packages are looking for funding
+  run `npm fund` for details
+
+14 vulnerabilities (3 low, 4 moderate, 6 high, 1 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+npm notice
+npm notice New major version of npm available! 11.16.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice
+
+(base) C:\pinokio\api\theprototype.pinokio\app>
